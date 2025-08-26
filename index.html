@@ -7,7 +7,36 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <div class="grid"></div>
+    <div class="container display">
+        <div class="header">
+            <img src="image/task.svg" width="30" alt="Task">
+            <h1>Root Task</h1>
+        </div>
+
+    <div class="note">
+        If you try you have <strong>nothing to lose</strong>.
+    </div>
+    <div class="addTask">
+        <input type="text" id="taskInput" placeholder="Enter a new task">
+        <button id="addTaskButton">Add Task</button>
+    </div>
+
+    <div class="taskList">
+        <ul id="taskList">
+            <!-- Task items will be added here dynamically -->
+        </ul>
+    </div>
+
+    <div class="default">
+        <img src="image/task-svgrepo-com.svg" width="50" alt="">
+        <h2>No tasks available</h2>
+        <p>Please add a task to get started.</p>
+    </div>
+
+
+    </div>
 </body>
-<script src="script/script.js"></script>
+<script src="script/node.js"></script>
+<script src="script/note.js"></script>
 </html>
