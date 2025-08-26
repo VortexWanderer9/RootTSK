@@ -1,12 +1,26 @@
 const notes = [
-  "Endure the silence, earn the thunder of legacy.",
-  "Embrace the fire; real things are forged in it.",
-  "The dream is free, but becoming costs everything.",
-  "Outlast the darkness, become the light.",
-  "Every action is a vote for the man you’re becoming.",
-  "There’s no fate—just the decision not to fold.",
-  "Greatness isn’t achieved, it’s survived.",
-  "The grind reveals who you really are when no one’s watching.",
-  "Walk alone toward your vision; that’s where truth is found.",
-  "One day, your name will answer: 'Who did it despite everything?'"
+  "Start small, finish strong.",
+  "Every task done is a step closer to your goals.",
+  "Progress, not perfection.",
+  "One thing at a time—focus wins.",
+  "Your future self will thank you for today's effort.",
+  "Break big tasks into small victories.",
+  "Consistency beats intensity.",
+  "Done is better than perfect.",
+  "Celebrate every completed task.",
+  "Keep moving forward, even if it's just a little.",
+  "Small steps every day lead to big results.",
+  "Stay positive and persistent.",
+  "You are capable of amazing things.",
+  "Focus on what you can control.",
+  "Success is built on daily habits."
 ];
+
+function displayNotes() {
+  let count = 0;
+  setInterval(() => {
+    document.querySelector(".note").textContent = notes[count];
+    count = (count + 1) % notes.length;
+  }, 15000);
+}
+displayNotes();
