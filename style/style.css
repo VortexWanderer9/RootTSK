@@ -105,7 +105,7 @@
 
 .cards{
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
 }
 
@@ -116,8 +116,35 @@
     border: 1px solid gray;
     justify-content: space-between;
 }
-.card input[checkbox]{
-    accent-color: gray;
+.card input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #5d5d7e;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: background 0.2s, border-color 0.2s;
+    position: relative;
+}
+
+.card input[type="checkbox"]:checked {
+    background-color: #5d5d7e;
+    border-color: #5d5d7e;
+}
+
+.card input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    pointer-events: none;
 }
 .one{
     gap: 20px;
