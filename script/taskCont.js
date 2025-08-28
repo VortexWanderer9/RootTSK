@@ -1,4 +1,5 @@
 export const taskCode = [];
+export const completedTasks = [];
 
-    console.log(taskCode[0]);
+
 

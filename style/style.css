@@ -66,9 +66,11 @@
     padding: 7px 15px;
     border-radius: 5px;
     background-color: #717182;
-    color: white;
+    color: #cbced4;
     cursor: not-allowed;
-    gap: 5px;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 .button.active{
     background-color: #5d5d7e;
@@ -107,6 +109,11 @@
     padding: 20px;
     margin-top: 30px;
     width: 100%;
+}
+.text.completed{
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.6;
 }
 
 .card{
@@ -155,4 +162,20 @@
 }
 .remove img:hover{
     background-color: rgba(0, 0, 0, 0.2);
+}
+@media  screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    /* .addTask {
+        width: 100%;
+        flex-direction: column;
+    } */
+    .addTask input {
+        width: 100%;
+    }
+    .taskList {
+        width: 100%;
+    }
+    
 }
