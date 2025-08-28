@@ -31,6 +31,7 @@ taskInput.addEventListener('input', () => {
                 div.innerHTML = taskContent;
                 document.querySelector('.cards').appendChild(div)
                 checkEmpty()
+                checkComplete(completedTasks.length)
                 taskInput.value = '';
                  const remove = div.querySelector('.remove')
                  remove.addEventListener('click', (e) =>{
